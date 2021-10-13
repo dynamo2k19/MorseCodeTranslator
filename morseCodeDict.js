@@ -1,0 +1,54 @@
+const toMorse = new Map();
+toMorse.set('A', ".-");
+toMorse.set('B', "-...");
+toMorse.set('C', "-.-.");
+toMorse.set('D', "-..");
+toMorse.set('E', ".");
+toMorse.set('F', "..-.");
+toMorse.set('G', "--.");
+toMorse.set('H', "....");
+toMorse.set('I', "..");
+toMorse.set('J', ".---");
+toMorse.set('K', "-.-");
+toMorse.set('L', ".-..");
+toMorse.set('M', "--");
+toMorse.set('N', "-.");
+toMorse.set('O', "---");
+toMorse.set('P', ".--.");
+toMorse.set('Q', "--.-");
+toMorse.set('R', ".-.");
+toMorse.set('S', "...");
+toMorse.set('T', "-");
+toMorse.set('U', "..-");
+toMorse.set('V', "...-");
+toMorse.set('W', ".--");
+toMorse.set('X', "-..-");
+toMorse.set('Y', "-.--");
+toMorse.set('Z', "--..");
+toMorse.set('1', ".----");
+toMorse.set('2', "..---");
+toMorse.set('3', "...--");
+toMorse.set('4', "....-");
+toMorse.set('5', ".....");
+toMorse.set('6', "-....");
+toMorse.set('7', "--...");
+toMorse.set('8', "---..");
+toMorse.set('9', "----.");
+toMorse.set('0', "-----");
+toMorse.set('!', "-.-.--");
+toMorse.set(',', "---...");
+toMorse.set(';', "-.-.-.");
+toMorse.set(',', "--..--");
+toMorse.set('.', ".-.-.-");
+toMorse.set('?', "..--..");
+toMorse.set('@', ".--.-.");
+toMorse.set('/', "-..-.");
+toMorse.set('-', "-....-");
+toMorse.set('(', "-.--.");
+toMorse.set(')', "-.--.-");
+
+const toEng = new Map();
+
+for (const [key, value] of toMorse.entries()) {
+  toEng.set(value, key);
+}
